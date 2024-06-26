@@ -1,7 +1,11 @@
+import Modal from "./components/Modal";
+
 function App() {
   return (
     <div>
-      Proximamente
+      <Modal>
+        <p>HOLA COMO ESTAS</p>
+      </Modal>
     </div>
   );
 }
