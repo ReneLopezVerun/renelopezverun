@@ -18,7 +18,7 @@ const Tecnologias = () =>{
     ];
 
     const HandleClick = (tecnologia) =>{
-        toast(`hola, has seleccionado ${tecnologia}`)
+        toast(`hola, tengo conocimientos en ${tecnologia}`)
     };
 
     return(
