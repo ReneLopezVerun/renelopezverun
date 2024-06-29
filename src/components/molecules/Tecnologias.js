@@ -22,7 +22,7 @@ const Tecnologias = () =>{
     };
 
     return(
-        <div className="w-full flex flex-row items-center justify-around">
+        <div className="w-full flex flex-row flex-wrap items-center justify-around">
             {tecnologias.map((tech, index) => (
                 <CardTecnologia  
                     key={index}  

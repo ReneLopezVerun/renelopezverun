@@ -1,7 +1,7 @@
 import React from "react";
 const Title = ({value}) => {
     return(
-        <p className="text-white text-9xl">{value}</p>
+        <p className="text-white text-7xl text-center">{value}</p>
     );
 };
 
