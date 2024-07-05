@@ -1,8 +1,8 @@
 import React from "react"
 
-const Subtitle = ({value}) =>{
+const Subtitle = ({value, colorText="text-white"}) =>{
     return(
-        <p className="text-slate-500 text-2xl text-center">{value}</p>
+        <p className={`${colorText} text-base md:text-2xl text-center`}>{value}</p>
     );
 };
 

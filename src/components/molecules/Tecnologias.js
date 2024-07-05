@@ -9,16 +9,16 @@ import { toast } from "react-toastify";
 const Tecnologias = () =>{
     
     const tecnologias = [
-        { icon: FaReact, tecnologia: "React", color: "#ffffff", hoverColor: "#61DAFB" },
-        { icon: DiJavascript1, tecnologia: "JavaScript", color: "#ffffff", hoverColor: "#F7DF1E" },
-        { icon: MdCss, tecnologia: "CSS", color: "#ffffff", hoverColor: "#1572B6" },
-        { icon: MdHtml, tecnologia: "HTML", color: "#ffffff", hoverColor: "#E34F26" },
-        { icon: RiTailwindCssFill, tecnologia: "Tailwind CSS", color: "#ffffff", hoverColor: "#38B2AC" },
-        { icon: FaGithub, tecnologia: "GitHub", color: "#ffffff", hoverColor: "#ffffff" },
+        { icon: FaReact, tecnologia: "React", color: "text-[#ffffff]", hoverColor: "hover:text-[#61DAFB]" },
+        { icon: DiJavascript1, tecnologia: "JavaScript", color: "text-[#ffffff]", hoverColor: "hover:text-[#F7DF1E]" },
+        { icon: MdCss, tecnologia: "CSS", color: "text-[#ffffff]", hoverColor: "hover:text-[#1572B6]" },
+        { icon: MdHtml, tecnologia: "HTML", color: "text-[#ffffff]", hoverColor: "hover:text-[#E34F26]" },
+        { icon: RiTailwindCssFill, tecnologia: "Tailwind CSS", color: "text-[#ffffff]", hoverColor: "hover:text-[#38B2AC]" },
+        { icon: FaGithub, tecnologia: "GitHub", color: "text-[#ffffff]", hoverColor: "hover:text-[#ffffff]" },
     ];
 
     const HandleClick = (tecnologia) =>{
-        toast(`hola, tengo conocimientos en ${tecnologia}`)
+        toast.info(`hola, tengo conocimientos en ${tecnologia}`)
     };
 
     return(

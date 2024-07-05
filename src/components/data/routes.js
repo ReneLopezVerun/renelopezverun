@@ -8,6 +8,10 @@ export const routes = [
         pathName:"/projects",
     },
     {
+        name:"Inicio",
+        pathName:"/",
+    },
+    {
         name:"Contacto",
         pathName:"/contact",
     },
