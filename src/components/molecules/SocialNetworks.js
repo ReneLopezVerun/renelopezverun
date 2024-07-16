@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaGithub, FaInstagram } from "react-icons/fa";
 
 const SocialNetworks = () => {
     return (
@@ -10,9 +10,7 @@ const SocialNetworks = () => {
             <a href="https://instagram.com/rene_de_nazaret/" target="_blank" rel="noopener noreferrer"  className="h-full flex items-center">
                 <FaInstagram size={30} />
             </a>
-            <a href="https://www.youtube.com/channel/UCJ5dUQC3Z59ttsyEt-om26w" target="_blank" rel="noopener noreferrer" className="h-full flex items-center">
-                <FaYoutube size={30} />
-            </a>
+
         </div>
     );
 };

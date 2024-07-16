@@ -1,7 +1,7 @@
 import React from "react";
-const Title = ({value}) => {
+const Title = ({value, colorText="text-white "}) => {
     return(
-        <p className="text-white text-2xl md:text-7xl text-center">{value}</p>
+        <p className={` ${colorText} text-2xl md:text-7xl text-center`}>{value}</p>
     );
 };
 
