@@ -4,7 +4,6 @@ import Subtitle from "../atoms/Subtitle";
 import { GiMexico } from "react-icons/gi";
 import { FaCss3, FaGitAlt, FaGithub, FaGitlab, FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
-import Carrousel from "../molecules/Carrousel";
 
 const About = () =>{
     return(
@@ -21,7 +20,7 @@ const About = () =>{
                         <Subtitle  value="Puebla MX" colorText="" />
                     </div>
                 </div>
-                <div className="w-full md:w-3/4 h-24 md:h-2/5 text-white hover:text-black bg-black hover:bg-green-600 hover:scale-90 hover:border-black flex flex-col justify-center items-center border-2 border-white">
+                <div className="w-full md:w-3/4 h-24 md:h-2/5 text-white hover:text-black bg-black hover:bg-green-600 hover:scale-90 hover:border-black flex flex-col justify-center items-center border-2 border-white px-4">
                     <Subtitle value="Cursé la ingenieria en Ciencias de la computación en la BUAP" colorText="" />
                 </div>
                 <div className="w-full md:w-1/4 h-24 md:h-2/5 text-white hover:text-black bg-black hover:bg-red-600 hover:scale-90 hover:border-black flex justify-center items-center border-2 border-white"><Subtitle value="Creativo" colorText="" /></div>
@@ -37,9 +36,6 @@ const About = () =>{
                     <div className="w-full flex flex-row justify-center space-x-6"> <FaGitAlt size={50} className="animate-pulse" /> <FaGithub size={50} className="animate-pulse" /> <FaGitlab size={50} className="animate-pulse" /> </div>
                     <Subtitle value="Una cosa que me gusta es diseñar componentes, y mi metodologia preferida es el diseño Atomico" />
                 </div>
-            </div>
-            <div className="w-full h-screen">
-                <Carrousel/>
             </div>
         </div>
     );
