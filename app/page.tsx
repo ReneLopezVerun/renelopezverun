@@ -10,22 +10,29 @@ import Contact from "@/components/sections/Contact"
 
 export default function Home() {
   const [lang, setLang] = useState<Lang>("en")
-
-useEffect(() => {
-  if (typeof window === "undefined") return
-
-  const stored = localStorage.getItem("lang") as Lang
-  if (stored) setLang(stored)
-}, [])
-
+  const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
-    document.documentElement.lang = lang
-  }, [lang])
+    setMounted(true)
+    const stored = localStorage.getItem("lang") as Lang
+    if (stored) setLang(stored)
+  }, [])
+
+  useEffect(() => {
+    if (mounted) {
+      document.documentElement.lang = lang
+    }
+  }, [lang, mounted])
 
   const changeLang = (l: Lang) => {
-    localStorage.setItem("lang", l)
+    if (typeof window !== "undefined") {
+      localStorage.setItem("lang", l)
+    }
     setLang(l)
+  }
+
+  if (!mounted) {
+    return null
   }
 
   return (
