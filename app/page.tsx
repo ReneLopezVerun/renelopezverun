@@ -11,10 +11,13 @@ import Contact from "@/components/sections/Contact"
 export default function Home() {
   const [lang, setLang] = useState<Lang>("en")
 
-  useEffect(() => {
-    const stored = localStorage.getItem("lang") as Lang
-    if (stored) setLang(stored)
-  }, [])
+useEffect(() => {
+  if (typeof window === "undefined") return
+
+  const stored = localStorage.getItem("lang") as Lang
+  if (stored) setLang(stored)
+}, [])
+
 
   useEffect(() => {
     document.documentElement.lang = lang

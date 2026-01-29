@@ -10,6 +10,7 @@ export default function ToggleTheme(){
     })
 
     useEffect(()=> {
+        if (typeof window === "undefined") return
         if (dark) {
             document.documentElement.classList.add("dark")
         } else {
