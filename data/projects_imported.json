@@ -1,0 +1,452 @@
+[
+  {
+    "nombre": "Ramirez Soto Página Web",
+    "estatus": "Activo",
+    "tecnologia": "React",
+    "baseDatos": "RamirezSotoWebPage (Supabase)",
+    "infraestructura": "Amplify + S3",
+    "dominio": "www.ramirezsoto.com.mx",
+    "notas": "Portal institucional de Ramirez Soto: una landing page con blog para dar a conocer a la empresa y compartir contenido con sus clientes.",
+    "fotos": []
+  },
+  {
+    "nombre": "App de Cocina",
+    "estatus": "Inactivo",
+    "tecnologia": "React Native",
+    "baseDatos": null,
+    "infraestructura": "Expo Notifications",
+    "dominio": null,
+    "notas": "App de cocina, optimizada para tablets, del sistema Contenedor: los chefs iniciaban sesión para dejar la cocina lista y recibir los pedidos de los meseros, veían las comandas con sus extras e indicaciones, probaban el flujo y ocultaban productos no disponibles.",
+    "fotos": []
+  },
+  {
+    "nombre": "Servidor de Cafetería",
+    "estatus": "Inactivo",
+    "tecnologia": "Node.js",
+    "baseDatos": null,
+    "infraestructura": "EC2 RamirezSotoWebPage (PM2) + S3",
+    "dominio": null,
+    "notas": "Fork del servidor Node.js de Contenedor, adaptado a una operación pequeña: una sola cocina y un solo mesero. Corría en una instancia EC2 administrada con PM2.",
+    "fotos": []
+  },
+  {
+    "nombre": "Cafetería Salas App",
+    "estatus": "Inactivo",
+    "tecnologia": "React Native (Expo)",
+    "baseDatos": null,
+    "infraestructura": "Expo Notifications",
+    "dominio": null,
+    "notas": "Fork de la app de meseros convertido en una app interna de la empresa para pedir cafetería directamente a las salas de juntas.",
+    "fotos": []
+  },
+  {
+    "nombre": "Cursos AscPat",
+    "estatus": "Activo",
+    "tecnologia": "Next.js",
+    "baseDatos": "RDS",
+    "infraestructura": "Amplify + S3 + Cognito",
+    "dominio": "asocpatronal.com",
+    "notas": "Plataforma de gestión y aplicación de cursos: incluye videos, lecturas en PDF, grabación de video y cuestionarios.",
+    "fotos": []
+  },
+  {
+    "nombre": "Contenedor Server",
+    "estatus": "Inactivo",
+    "tecnologia": "Node.js",
+    "baseDatos": null,
+    "infraestructura": "EC2 + Nginx",
+    "dominio": null,
+    "notas": "Servidor backend del sistema de restaurante Contenedor, con una instancia EC2 dedicada y Nginx como proxy.",
+    "fotos": []
+  },
+  {
+    "nombre": "Contenedor Client",
+    "estatus": "Inactivo",
+    "tecnologia": "React",
+    "baseDatos": null,
+    "infraestructura": "S3",
+    "dominio": "contenedor.shop / contenedor.xyz (no renovar)",
+    "notas": "Landing page y gestor web del sistema de restaurante Contenedor, con soporte para múltiples dueños.",
+    "fotos": []
+  },
+  {
+    "nombre": "Contenedor App Mesero",
+    "estatus": "Inactivo",
+    "tecnologia": "React Native",
+    "baseDatos": null,
+    "infraestructura": "Expo Notifications",
+    "dominio": null,
+    "notas": "App móvil de meseros para enviar comandas a la app de cocina.",
+    "fotos": []
+  },
+  {
+    "nombre": "Taja Plus Server",
+    "estatus": "Inactivo",
+    "tecnologia": "Node.js",
+    "baseDatos": null,
+    "infraestructura": null,
+    "dominio": null,
+    "notas": "Servidor backend de Taja Plus, un sistema de lealtad para gasolineras.",
+    "fotos": []
+  },
+  {
+    "nombre": "Taja Plus Client",
+    "estatus": "Inactivo",
+    "tecnologia": "React",
+    "baseDatos": null,
+    "infraestructura": null,
+    "dominio": null,
+    "notas": "Panel web de Taja Plus: gestor de premios (CRUD) y landing page del sistema de lealtad para gasolineras.",
+    "fotos": []
+  },
+  {
+    "nombre": "Taja Plus App",
+    "estatus": "Inactivo",
+    "tecnologia": "React Native",
+    "baseDatos": null,
+    "infraestructura": null,
+    "dominio": null,
+    "notas": "App de usuario de Taja Plus: permite canjear premios, acumular puntos y ubicar gasolineras cercanas.",
+    "fotos": []
+  },
+  {
+    "nombre": "App Contabilidad Web Client",
+    "estatus": "Activo",
+    "tecnologia": "React",
+    "baseDatos": "Administrador de Archivos (Supabase)",
+    "infraestructura": "EC2 Administrador de Archivos + SES + S3",
+    "dominio": "contabilidad.ramirezsoto.com.mx",
+    "notas": "Cliente web del sistema de contabilidad para gestionar múltiples documentos y usuarios.",
+    "fotos": []
+  },
+  {
+    "nombre": "App Contabilidad Server",
+    "estatus": "Activo",
+    "tecnologia": "Node.js",
+    "baseDatos": "Administrador de Archivos (Supabase)",
+    "infraestructura": "EC2 Administrador de Archivos + Nginx",
+    "dominio": null,
+    "notas": "Servidor backend del sistema gestor de documentos de la app de contabilidad. Corre 24/7 en una instancia EC2 dedicada con Nginx.",
+    "fotos": []
+  },
+  {
+    "nombre": "App Contabilidad Móvil",
+    "estatus": "Activo",
+    "tecnologia": "React Native (Expo)",
+    "baseDatos": "Administrador de Archivos (Supabase)",
+    "infraestructura": null,
+    "dominio": "https://play.google.com/store/apps/details?id=com.ramirezsoto.administracion",
+    "notas": "App de usuario, disponible en tiendas, para gestionar sus documentos desde el celular.",
+    "fotos": []
+  },
+  {
+    "nombre": "Dicon",
+    "estatus": "Activo",
+    "tecnologia": "React",
+    "baseDatos": null,
+    "infraestructura": "CloudFront + S3 + Terraform",
+    "dominio": "diconsolutions.com.mx",
+    "notas": "Landing page",
+    "fotos": []
+  },
+  {
+    "nombre": "Cpoint",
+    "estatus": "Activo",
+    "tecnologia": "React",
+    "baseDatos": null,
+    "infraestructura": "CloudFront + S3 + Terraform",
+    "dominio": "cpoint.com.mx",
+    "notas": "Landing page",
+    "fotos": []
+  },
+  {
+    "nombre": "Alianza Génesis",
+    "estatus": "Activo",
+    "tecnologia": "React",
+    "baseDatos": null,
+    "infraestructura": "CloudFront + S3 + Terraform",
+    "dominio": "alianza-genesis.com",
+    "notas": "Landing page",
+    "fotos": []
+  },
+  {
+    "nombre": "Loyalty",
+    "estatus": "Activo",
+    "tecnologia": "React",
+    "baseDatos": null,
+    "infraestructura": "CloudFront + S3 + Terraform",
+    "dominio": "in-loyalty.com",
+    "notas": "Landing page",
+    "fotos": []
+  },
+  {
+    "nombre": "Estrategias Alto Nivel",
+    "estatus": "Activo",
+    "tecnologia": "React",
+    "baseDatos": null,
+    "infraestructura": "CloudFront + S3 + Terraform",
+    "dominio": "estrategiascorporativas.mx",
+    "notas": "Landing page",
+    "fotos": []
+  },
+  {
+    "nombre": "Loginem",
+    "estatus": "Activo",
+    "tecnologia": "React",
+    "baseDatos": null,
+    "infraestructura": "CloudFront + S3 + Terraform",
+    "dominio": "loginem.com",
+    "notas": "Landing page",
+    "fotos": []
+  },
+  {
+    "nombre": "Clean Wash & Go",
+    "estatus": "Activo",
+    "tecnologia": "React",
+    "baseDatos": null,
+    "infraestructura": "CloudFront + S3 + Terraform",
+    "dominio": "clean-wash-go.com",
+    "notas": "Landing page",
+    "fotos": []
+  },
+  {
+    "nombre": "Nemesis",
+    "estatus": "Activo",
+    "tecnologia": "React",
+    "baseDatos": null,
+    "infraestructura": "CloudFront + S3 + Terraform",
+    "dominio": "dis-nemesis.com",
+    "notas": "Landing page",
+    "fotos": []
+  },
+  {
+    "nombre": "Autores GDA",
+    "estatus": "Activo",
+    "tecnologia": "React",
+    "baseDatos": null,
+    "infraestructura": "CloudFront + S3 + Terraform",
+    "dominio": "autores-gda.com",
+    "notas": "Landing page",
+    "fotos": []
+  },
+  {
+    "nombre": "Consupres",
+    "estatus": "Activo",
+    "tecnologia": "React",
+    "baseDatos": null,
+    "infraestructura": "CloudFront + S3 + Terraform",
+    "dominio": "consupres.com",
+    "notas": "Landing page",
+    "fotos": []
+  },
+  {
+    "nombre": "Inmobile",
+    "estatus": "Activo",
+    "tecnologia": "React",
+    "baseDatos": null,
+    "infraestructura": "CloudFront + S3 + Terraform",
+    "dominio": "in-arquitectos.com",
+    "notas": "Landing page",
+    "fotos": []
+  },
+  {
+    "nombre": "Central Ent",
+    "estatus": "Activo",
+    "tecnologia": "React",
+    "baseDatos": null,
+    "infraestructura": "CloudFront + S3 + Terraform",
+    "dominio": "ent-central.com",
+    "notas": "Landing page",
+    "fotos": []
+  },
+  {
+    "nombre": "Norma035",
+    "estatus": "Activo",
+    "tecnologia": "Next.js",
+    "baseDatos": "RDS",
+    "infraestructura": "Amplify + SES + S3",
+    "dominio": "https://main.d4po752t43oc0.amplifyapp.com",
+    "notas": "Plataforma para aplicar evaluaciones de la NOM-035 a múltiples empresas.",
+    "fotos": []
+  },
+  {
+    "nombre": "SportsStatsManual",
+    "estatus": "Activo",
+    "tecnologia": "Vite",
+    "baseDatos": null,
+    "infraestructura": "CloudFront + S3",
+    "dominio": null,
+    "notas": "Proyecto desarrollado por terceros, alojado en CloudFront + S3.",
+    "fotos": []
+  },
+  {
+    "nombre": "Alecom",
+    "estatus": "Activo",
+    "tecnologia": "Vite",
+    "baseDatos": null,
+    "infraestructura": "CloudFront + S3",
+    "dominio": "d2h9nla1e1703e.cloudfront.net",
+    "notas": "Sitio web de Alecom, disponible por ahora en el dominio de CloudFront; pendiente de comprar un dominio propio.",
+    "fotos": []
+  },
+  {
+    "nombre": "Alecom App Web",
+    "estatus": "Activo",
+    "tecnologia": "Next.js",
+    "baseDatos": "RDS",
+    "infraestructura": "Amplify + S3 + SES",
+    "dominio": "https://main.d2syda5931b9kr.amplifyapp.com",
+    "notas": "Plataforma de Alecom para inmobiliarias: gestiona múltiples inmobiliarias, sus documentos, inquilinos y rentas.",
+    "fotos": []
+  },
+  {
+    "nombre": "Alecom App Móvil",
+    "estatus": "Activo",
+    "tecnologia": "React Native (Expo)",
+    "baseDatos": null,
+    "infraestructura": "App Store + Play Store (beta)",
+    "dominio": "https://apps.apple.com/us/app/alecom/id6768466100",
+    "notas": "App móvil de Alecom dirigida principalmente a los inquilinos, disponible en versión beta en App Store y Play Store.",
+    "fotos": []
+  },
+  {
+    "nombre": "Casino App Web",
+    "estatus": "Activo",
+    "tecnologia": "Next.js",
+    "baseDatos": "RDS",
+    "infraestructura": "Amplify + S3",
+    "dominio": "bonos-casino.net",
+    "notas": "Panel de administración (CRUD) del sistema de lealtad para casinos: casinos, premios, usuarios y canjes.",
+    "fotos": []
+  },
+  {
+    "nombre": "Casino App",
+    "estatus": "Activo",
+    "tecnologia": "React Native (Expo)",
+    "baseDatos": "casino-app (Supabase)",
+    "infraestructura": null,
+    "dominio": "https://apps.apple.com/us/app/bonus-rewards-user/id6768753461",
+    "notas": "App de captación de clientes: el usuario gira una ruleta y se registra en el sistema de lealtad.",
+    "fotos": []
+  },
+  {
+    "nombre": "Equipos AMA",
+    "estatus": "Activo",
+    "tecnologia": "Vite",
+    "baseDatos": null,
+    "infraestructura": "CloudFront + S3",
+    "dominio": "equiposama.com",
+    "notas": "Landing page",
+    "fotos": []
+  },
+  {
+    "nombre": "Pilatic",
+    "estatus": "Activo",
+    "tecnologia": "Next.js",
+    "baseDatos": "pilatic (Supabase)",
+    "infraestructura": "Amplify + S3 + Stripe",
+    "dominio": "pilatic.com",
+    "notas": "Plataforma para gestionar un negocio de pilates: usuarios, descuentos, clases, coaches y paquetes, con compras en línea mediante Stripe.",
+    "fotos": []
+  },
+  {
+    "nombre": "Demetria App Web",
+    "estatus": "Desarrollo",
+    "tecnologia": "Next.js",
+    "baseDatos": "RDS",
+    "infraestructura": "Amplify + S3 + Lambda + EventBridge",
+    "dominio": "https://main.d2dqu2d2wqadyz.amplifyapp.com",
+    "notas": "Plataforma web de lealtad para una tienda de ropa: gestiona empleados, puntos, clientes, premios y canjes.",
+    "fotos": []
+  },
+  {
+    "nombre": "Demetria App Móvil",
+    "estatus": "Desarrollo",
+    "tecnologia": "React Native (Expo)",
+    "baseDatos": null,
+    "infraestructura": null,
+    "dominio": null,
+    "notas": "App móvil para los usuarios del sistema de lealtad de Demetria.",
+    "fotos": []
+  },
+  {
+    "nombre": "GDA App Móvil",
+    "estatus": "Activo",
+    "tecnologia": "React Native (Expo)",
+    "baseDatos": "gdaMagazineCerts (Supabase)",
+    "infraestructura": "Consumo de API",
+    "dominio": "https://play.google.com/store/apps/details?id=com.CPoint.GDA_Magazine",
+    "notas": "App móvil de GDA Magazine que consume la API de la aplicación legacy en Laravel.",
+    "fotos": []
+  },
+  {
+    "nombre": "Control de Personal",
+    "estatus": "Desarrollo",
+    "tecnologia": "Next.js",
+    "baseDatos": "RDS",
+    "infraestructura": "Amplify + S3 + Lambda + EventBridge + SES",
+    "dominio": "https://rrhh.ramirezsoto.com.mx",
+    "notas": "Plataforma de recursos humanos: control de nómina, altas y bajas, gestión de documentos de empleados y vacaciones.",
+    "fotos": []
+  },
+  {
+    "nombre": "App Comedor Web",
+    "estatus": "Activo",
+    "tecnologia": "Next.js",
+    "baseDatos": "RDS",
+    "infraestructura": "Amplify + SES + S3 + Lambda + EventBridge",
+    "dominio": "https://ramirezsoto.com.mx/comedor/login",
+    "notas": "Aplicación web full stack para un comedor empresarial: gestiona menús, crea recetas, cotiza compras, aprueba pagos, envía recordatorios por correo y notificaciones push (Expo), administra ventanas de registro y controla accesos.",
+    "fotos": []
+  },
+  {
+    "nombre": "App Comedor",
+    "estatus": "Activo",
+    "tecnologia": "React Native",
+    "baseDatos": null,
+    "infraestructura": "Expo + App Store / APK (actualizaciones OTA)",
+    "dominio": "https://apps.apple.com/us/app/comedor-rs/id6786484296",
+    "notas": "App del usuario del comedor empresarial: elige su menú, sube comprobantes, selecciona horarios, obtiene su QR diario por comida y recibe recordatorios. También ayuda al cocinero a escanear los QR y llevar el control de quién ya comió.",
+    "fotos": []
+  },
+  {
+    "nombre": "Movimientos Estrategias",
+    "estatus": "Activo",
+    "tecnologia": "Next.js",
+    "baseDatos": "RDS",
+    "infraestructura": "Amplify + S3 + SES",
+    "dominio": "https://main.dm962q75jmfqd.amplifyapp.com",
+    "notas": "App de gestión de movimientos de caja: administra usuarios y envía correos a los involucrados en cada entrada y salida de caja.",
+    "fotos": []
+  },
+  {
+    "nombre": "BeatCycle",
+    "estatus": "Activo",
+    "tecnologia": "Next.js",
+    "baseDatos": "RDS",
+    "infraestructura": "Amplify + S3 + SES + Stripe",
+    "dominio": "https://beatcycle.com.mx",
+    "notas": "Plataforma para gestionar un negocio de ciclismo indoor: clases, coaches, usuarios, pagos y paquetes, con envío de correos.",
+    "fotos": []
+  },
+  {
+    "nombre": "Pruebas Psicométricas",
+    "estatus": "Activo",
+    "tecnologia": "Next.js",
+    "baseDatos": "RDS",
+    "infraestructura": "Amplify + S3",
+    "dominio": "https://main.d10duxlpt64tus.amplifyapp.com",
+    "notas": "Plataforma de pruebas psicométricas para múltiples empresas: gestiona aplicantes y las pruebas asignadas a cada uno, con calificación automática y grabación de video.",
+    "fotos": []
+  },
+  {
+    "nombre": "Purificadoras",
+    "estatus": "Activo",
+    "tecnologia": "Next.js",
+    "baseDatos": "RDS",
+    "infraestructura": "Amplify",
+    "dominio": "https://main.d286l5ab9b2fuh.amplifyapp.com",
+    "notas": "Punto de venta para purificadoras con múltiples sucursales: precios personalizados por sucursal y ticket a la medida, optimizado para impresora térmica POS80.",
+    "fotos": []
+  }
+]
