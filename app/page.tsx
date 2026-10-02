@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react"
 import Hero from "@/components/sections/Hero"
-import ToggleTheme from "@/components/atoms/ToggleTheme"
 import LanguageSwitch from "@/components/atoms/LanguageSwitch"
 import { Lang } from "@/data/content"
 import Projects from "@/components/sections/Projects"
@@ -37,9 +36,8 @@ export default function Home() {
 
   return (
     <main className="px-5 md:px-8 max-w-6xl mx-auto">
-      <header className="flex justify-between items-center py-6 sticky top-0 backdrop-blur bg-(--bg)/80 z-50">
+      <header className="flex justify-between items-center py-6 sticky top-0 backdrop-blur-md bg-slate-950/80 z-50">
         <LanguageSwitch lang={lang} onChange={changeLang} />
-        <ToggleTheme />
       </header>
 
       <Hero lang={lang} />
