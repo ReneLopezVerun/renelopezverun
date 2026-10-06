@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="controllerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="50%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#d946ef" />
+    </linearGradient>
+    <linearGradient id="neonGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Dark Rounded Squircle Badge -->
+  <rect x="16" y="16" width="480" height="480" rx="108" fill="url(#bgGrad)" stroke="#1e293b" stroke-width="8" />
+
+  <!-- Outer Glow Aura -->
+  <path d="M140 160 C110 160, 80 185, 72 230 L42 355 C34 395, 60 430, 98 430 C125 430, 148 408, 158 375 L180 300 C190 290, 210 280, 256 280 C302 280, 322 290, 332 300 L354 375 C364 408, 387 430, 414 430 C452 430, 478 395, 470 355 L440 230 C432 185, 402 160, 372 160 Z"
+        fill="url(#controllerGrad)" filter="url(#glow)" opacity="0.3"/>
+
+  <!-- Solid Controller Body -->
+  <path d="M140 165 C115 165, 90 188, 82 230 L54 350 C47 386, 70 416, 104 416 C128 416, 148 396, 157 368 L176 302 C188 284, 212 274, 256 274 C300 274, 324 284, 336 302 L355 368 C364 396, 384 416, 408 416 C442 416, 465 386, 458 350 L430 230 C422 188, 397 165, 372 165 Z"
+        fill="#0f172a" stroke="url(#controllerGrad)" stroke-width="12" stroke-linejoin="round" />
+
+  <!-- Dev Screen / Touchpad with < /> Code Symbol -->
+  <rect x="200" y="195" width="112" height="60" rx="14" fill="#020617" stroke="#38bdf8" stroke-width="4" />
+  
+  <!-- Dev `< />` icon inside touchpad screen -->
+  <path d="M 232 213 L 218 225 L 232 237" fill="none" stroke="#38bdf8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+  <line x1="258" y1="211" x2="250" y2="239" stroke="#f43f5e" stroke-width="6" stroke-linecap="round" />
+  <path d="M 276 213 L 290 225 L 276 237" fill="none" stroke="#38bdf8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- D-PAD (Left Side) -->
+  <g fill="#020617" stroke="url(#neonGlow)" stroke-width="4">
+    <path d="M 142 225 h 24 v 24 h 24 v 24 h -24 v 24 h -24 v -24 h -24 v -24 h 24 z" stroke-linejoin="round"/>
+    <polygon points="154,231 147,241 161,241" fill="#38bdf8" stroke="none"/>
+    <polygon points="154,291 147,281 161,281" fill="#38bdf8" stroke="none"/>
+    <polygon points="129,261 139,254 139,268" fill="#38bdf8" stroke="none"/>
+    <polygon points="179,261 169,254 169,268" fill="#38bdf8" stroke="none"/>
+  </g>
+
+  <!-- ACTION BUTTONS (Right Side: Dev Vibrant Neon) -->
+  <g>
+    <!-- Top Button (Green) -->
+    <circle cx="358" cy="237" r="14" fill="#065f46" stroke="#10b981" stroke-width="3"/>
+    <circle cx="358" cy="237" r="5" fill="#34d399"/>
+    
+    <!-- Right Button (Pink/Red) -->
+    <circle cx="384" cy="261" r="14" fill="#881337" stroke="#f43f5e" stroke-width="3"/>
+    <circle cx="384" cy="261" r="5" fill="#fb7185"/>
+
+    <!-- Bottom Button (Cyan) -->
+    <circle cx="358" cy="285" r="14" fill="#0c4a6e" stroke="#38bdf8" stroke-width="3"/>
+    <circle cx="358" cy="285" r="5" fill="#38bdf8"/>
+
+    <!-- Left Button (Purple) -->
+    <circle cx="332" cy="261" r="14" fill="#4c1d95" stroke="#a855f7" stroke-width="3"/>
+    <circle cx="332" cy="261" r="5" fill="#c084fc"/>
+  </g>
+
+  <!-- Glowing Joysticks -->
+  <circle cx="205" cy="325" r="26" fill="#020617" stroke="#475569" stroke-width="4" />
+  <circle cx="205" cy="325" r="18" fill="url(#controllerGrad)" />
+  <circle cx="205" cy="325" r="8" fill="#ffffff" opacity="0.9" />
+
+  <circle cx="307" cy="325" r="26" fill="#020617" stroke="#475569" stroke-width="4" />
+  <circle cx="307" cy="325" r="18" fill="url(#controllerGrad)" />
+  <circle cx="307" cy="325" r="8" fill="#ffffff" opacity="0.9" />
+</svg>

@@ -72,7 +72,7 @@ const onSubmit = async (data: FormData) => {
           <input
             {...register("name")}
             placeholder={lang === "en" ? "Name" : "Nombre"}
-            className="w-full p-3 rounded-md border bg-transparent"
+            className="w-full p-3 rounded-xl border border-slate-800 bg-slate-900/60 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition"
           />
           {errors.name && (
             <p className="text-sm text-red-500 mt-1">
@@ -85,7 +85,7 @@ const onSubmit = async (data: FormData) => {
           <input
             {...register("email")}
             placeholder="Email"
-            className="w-full p-3 rounded-md border bg-transparent"
+            className="w-full p-3 rounded-xl border border-slate-800 bg-slate-900/60 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition"
           />
           {errors.email && (
             <p className="text-sm text-red-500 mt-1">
@@ -103,7 +103,7 @@ const onSubmit = async (data: FormData) => {
                 : "Cuéntame sobre tu proyecto"
             }
             rows={5}
-            className="w-full p-3 rounded-md border bg-transparent resize-none"
+            className="w-full p-3 rounded-xl border border-slate-800 bg-slate-900/60 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition resize-none"
           />
           {errors.message && (
             <p className="text-sm text-red-500 mt-1">
@@ -115,7 +115,7 @@ const onSubmit = async (data: FormData) => {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="px-6 py-3 rounded-md bg-black text-white dark:bg-white dark:text-black disabled:opacity-50 transition"
+          className="px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold shadow-lg shadow-indigo-600/25 disabled:opacity-50 transition cursor-pointer"
         >
           {isSubmitting
             ? lang === "en"
